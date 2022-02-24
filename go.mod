@@ -2,6 +2,8 @@ module github.com/k0sproject/k0sctl
 
 go 1.17
 
+replace golang.org/x/crypto => github.com/rmohr/crypto v0.0.0-20211203105847-e4ed9664ac54
+
 require (
 	github.com/AlecAivazis/survey/v2 v2.3.2
 	github.com/Azure/go-ntlmssp v0.0.0-20211209120228-48547f28849e // indirect

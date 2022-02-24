@@ -60,15 +60,17 @@ var (
 	}
 
 	analyticsFlag = &cli.BoolFlag{
-		Name:    "disable-telemetry",
-		Usage:   "Do not send anonymous telemetry",
-		EnvVars: []string{"DISABLE_TELEMETRY"},
+		Name:        "disable-telemetry",
+		DefaultText: "true",
+		Usage:       "Do not send anonymous telemetry",
+		EnvVars:     []string{"DISABLE_TELEMETRY"},
 	}
 
 	upgradeCheckFlag = &cli.BoolFlag{
-		Name:    "disable-upgrade-check",
-		Usage:   "Do not check for a k0sctl upgrade",
-		EnvVars: []string{"DISABLE_UPGRADE_CHECK"},
+		Name:        "disable-upgrade-check",
+		DefaultText: "true",
+		Usage:       "Do not check for a k0sctl upgrade",
+		EnvVars:     []string{"DISABLE_UPGRADE_CHECK"},
 	}
 
 	Colorize = aurora.NewAurora(false)
